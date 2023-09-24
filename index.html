@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="testicont">
+      <div class="container">
+        <div class="form-container">
+          <img
+            class="image"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt="singup-image" />
+          <div class="content">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers recieving monthly updates on:</p>
+            <ul>
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+
+            <div class="messages">
+              <label for="emailinput">Email adress</label>
+              <div class="error-message">Valid email required</div>
+            </div>
+
+            <input id="emailinput" type="email" />
+
+            <button onclick="test()">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+      </div>
+      <div class="success">
+        <div class="success-container">
+          <h1 class="tt">Thanks for subscribing!</h1>
+          <p class="parag"></p>
+          <button onclick="back()">Dismiss message</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
